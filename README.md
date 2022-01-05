@@ -1,1 +1,1 @@
-# Percent-Gain-To-Offset-Percent-Loss
+# Percent-Change-To-Offset-Percent-Change-In-An-Asset
