@@ -1,4 +1,4 @@
-import pytest # noqa F401
+import pytest  # noqa F401
 from main import calculate_offset
 
 

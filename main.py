@@ -29,10 +29,12 @@ def main():
     """
     while True:
         try:
-            percent_change = float(input(
-                "Enter current percent change (without a % sign) in asset "
-                "(put a negative (-) in front if a loss): "
-            ))
+            percent_change = float(
+                input(
+                    "Enter current percent change (without a % sign) in asset "
+                    "(put a negative (-) in front if a loss): "
+                )
+            )
             break
         except ValueError:
             print("Invalid input. Please enter a numeric value.")
