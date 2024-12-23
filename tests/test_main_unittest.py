@@ -1,6 +1,7 @@
 import unittest
 from main import calculate_offset
 
+
 class TestCalculateOffset(unittest.TestCase):
 
     def test_gain(self):
@@ -27,6 +28,7 @@ class TestCalculateOffset(unittest.TestCase):
         offset, message = calculate_offset(-50)
         self.assertEqual(offset, 100.0)
         self.assertEqual(message, "You need a 100.0% gain to offset your 50% loss")
+
 
 if __name__ == '__main__':
     unittest.main()
