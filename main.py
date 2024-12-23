@@ -11,6 +11,9 @@ def calculate_offset(percent_change, initial_value=100):
             - The offset percentage as a float (rounded to 2 decimal places).
             - A message describing the offset needed.
     """
+    if percent_change == -100:
+        return float('inf'), "You need an infinite gain to offset a 100% loss"
+
     percent_change_decimal = percent_change / 100
     value_after = initial_value * (1 + percent_change_decimal)
     offset_needed = ((initial_value / value_after) - 1) * 100
