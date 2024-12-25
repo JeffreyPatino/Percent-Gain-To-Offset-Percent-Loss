@@ -21,7 +21,7 @@ jobs:
       run: |
         source env/bin/activate
         flake8 .
-    - name: Test with pytest
+    - name: Test with unittest
       run: |
         source env/bin/activate
-        pytest
+        python -m unittest discover -s tests -v
